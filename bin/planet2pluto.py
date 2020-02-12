@@ -31,6 +31,7 @@ def main():
         outp[n]['title'] = inp[s]['name']
         outp[n]['link'] = CAT_RE.sub('', s)
         outp[n]['feed'] = s
+        outp[n]['avatar'] = inp[s]['gravatar']
 
     args.output.write('title = Planet Gentoo (test)\n\n')
     outp.write(args.output)
